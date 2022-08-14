@@ -7,7 +7,7 @@ import { MatDrawer } from '@angular/material/sidenav';
   styleUrls: ['./toolbar.component.scss'],
 })
 export class ToolbarComponent implements OnInit {
-  @Input('drawer') public drawer: MatDrawer;
+  @Input('sidenav') public sidenav: MatDrawer;
   constructor() {}
 
   ngOnInit(): void {}

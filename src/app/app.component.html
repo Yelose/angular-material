@@ -1,11 +1,11 @@
 <body>
   <header>
-    <app-toolbar [drawer]="drawer"></app-toolbar>
+    <app-toolbar [sidenav]="drawer"></app-toolbar>
   </header>
   <main>
-    <mat-drawer-container class="example-container" autosize>
-      <mat-drawer #drawer class="example-sidenav" mode="side">
-        <app-sidenav></app-sidenav>
+    <mat-drawer-container autosize>
+      <mat-drawer #drawer mode="side" opened="opened">
+        <app-sidenav [close]="drawer"></app-sidenav>
       </mat-drawer>
       <app-home></app-home>
       <router-outlet></router-outlet>

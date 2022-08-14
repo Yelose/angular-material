@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  flex-direction: column;
+  main {
+    display: flex;
+    flex: 1;
+    overflow-y: auto;
+    mat-drawer-container {
+      height: 100%;
+      flex: 1;
+    }
+  }
+}

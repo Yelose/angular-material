@@ -4,10 +4,31 @@
   </button>
   <span>Angular Material</span>
 
+  <mat-nav-list>
+    <mat-divider [inset]="true" vertical="true"></mat-divider>
+    <a mat-list-item href="#">Home</a>
+    <mat-divider vertical="true"></mat-divider>
+    <a mat-list-item href="#">About</a>
+    <mat-divider vertical="true"></mat-divider>
+    <a mat-list-item href="#">Services</a>
+    <mat-divider vertical="true"></mat-divider>
+  </mat-nav-list>
   <button mat-icon-button>
     <mat-icon>favorite</mat-icon>
   </button>
-  <button mat-icon-button>
-    <mat-icon>share</mat-icon>
+  <button mat-icon-button [mat-menu-trigger-for]="topMenu">
+    <mat-icon>menu</mat-icon>
   </button>
+  <mat-menu #topMenu="matMenu">
+    <button mat-menu-item [mat-menu-trigger-for]="sub1">mat-menu-item 1</button>
+    <a mat-menu-item href="#">mat-menu-item 2</a>
+  </mat-menu>
+  <mat-menu #sub1="matMenu">
+    <a mat-menu-item href="#">mat-menu-item 3</a>
+    <a mat-menu-item href="#" [mat-menu-trigger-for]="sub4">mat-menu-item 4</a>
+  </mat-menu>
+  <mat-menu #sub4="matMenu">
+    <a mat-menu-item href="#">mat-menu-item 5</a>
+    <a mat-menu-item href="#">mat-menu-item 6</a>
+  </mat-menu>
 </mat-toolbar>

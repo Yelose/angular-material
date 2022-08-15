@@ -5,4 +5,7 @@ mat-toolbar {
     flex: 1;
     justify-content: center;
   }
+  mat-nav-list {
+    display: flex;
+  }
 }

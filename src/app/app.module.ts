@@ -11,6 +11,8 @@ import { TypographyComponent } from './components/typography/typography.componen
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { FormsModule } from '@angular/forms';
+import { ListComponent } from './components/list/list.component';
+import { GridlistComponent } from './components/gridlist/gridlist.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { FormsModule } from '@angular/forms';
     TypographyComponent,
     ToolbarComponent,
     SidenavComponent,
+    ListComponent,
+    GridlistComponent,
   ],
   imports: [
     BrowserModule,
